@@ -59,10 +59,10 @@ flowchart LR
 
 ### En images
 
-![Blocs détectés sur une planche](docs/01_blocs_detectes.png)
+![Blocs détectés sur une planche](01_blocs_detectes.png)
 *Les blocs repérés par YOLO sur une planche (tableau de révisions, textes libres, cartouche, nota), lus ensuite un par un par le modèle de vision. Nom du plan et cartouche floutés.*
 
-![Une ligne de la fiche de contrôle avec ses preuves](docs/02_fiche_preuves_note_qualite.png)
+![Une ligne de la fiche de contrôle avec ses preuves](02_fiche_preuves_note_qualite.png)
 *Une ligne de la fiche : ce qui a été relevé sur le plan, les normes citées et, à droite, la page de la note qualité qui s'y rapporte. Le contrôleur décide OK / NOK. Identifiants et contenu de la note interne floutés.*
 
 ---
@@ -121,7 +121,7 @@ Le plus gros du travail n'a pas été d'appeler des modèles, mais de **pouvoir 
 - Chaque rejet est gardé avec sa raison et compté : le **taux de rejet** mesure ce que vaut le modèle sur la tâche.
 - Un **fournisseur manuel** (`ManualProvider`) écrit le prompt sur disque et relit la réponse d'un autre modèle ou d'un humain, qui passe par les mêmes vérificateurs : de quoi comparer des modèles sur exactement la même tâche.
 
-![Passe de jugement et vérificateur](docs/03_passe_juge_verificateur.png)
+![Passe de jugement et vérificateur](03_passe_juge_verificateur.png)
 *Une passe de jugement de référence, déposée via le fournisseur manuel : 15 propositions, 5 constats gardés, 9 « conformes », 1 rejeté par le vérificateur parce qu'il citait un élément absent du dossier (`n7`). Capture de septembre 2026 : la base comptait alors 92 règles.*
 
 ### Agent explorateur du graphe : une boucle d'outils
